@@ -53,6 +53,11 @@ button:hover {
   padding-bottom: 20px;
   border-bottom: 1px solid #555;
 }
+
+.category-form {
+  padding-bottom: 1.5rem;
+}
+
 .todo {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -62,6 +67,23 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.todo .content {
+  flex-grow: 1;
+}
+
+.todo .completion-date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.8em;
+  color: #888;
+}
+
+.todo .completion-date .expired {
+  color: red;
 }
 
 .complete {
@@ -71,11 +93,15 @@ button:hover {
 .remove {
   background-color: #d9534f;
 }
+
 .todo-form {
   padding-bottom: 1.5rem;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #555;
 }
 
-input,select {
+input, select {
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid;
@@ -89,7 +115,7 @@ input,select {
   padding-bottom: 20px;
 }
 
-.filter-options{
+.filter-options {
   display: flex;
   justify-content: space-between;
   gap: 3rem;
